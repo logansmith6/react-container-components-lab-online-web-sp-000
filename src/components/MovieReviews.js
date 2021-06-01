@@ -18,8 +18,8 @@ class MovieReviews extends Component {
     return this.state.reviews.map(review => {
       return (
         <div className="review">
-           <img src={ review.img_url }/>
-           <h3>{ review.title }</h3>
+           <img src={ review.img_url } />
+           <h3> { review.title }</h3>
         </div>
       )
     })
