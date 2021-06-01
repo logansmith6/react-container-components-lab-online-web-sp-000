@@ -13,4 +13,14 @@ class MovieReviews extends Component {
       .then(response => response.json())
       .then(reviewData => this.setState({reviews: reviewData.reviews}))
   }
+
+  renderReviews = () => {
+    return this.state.reviews.map(review => {
+      return (
+        <div className="review">
+           <img src={review.img_url} />
+           <h3>{ review.title }</h3>
+      )
+    })
+  }
 }
