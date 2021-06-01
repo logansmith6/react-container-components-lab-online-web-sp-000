@@ -19,8 +19,8 @@ class MovieReviews extends Component {
       return (
         <div className="review">
            <img src={ review.img_url }/>
-
-        </div
+           <h3>{ review.title }</h3>
+        </div>
       )
     })
   }
